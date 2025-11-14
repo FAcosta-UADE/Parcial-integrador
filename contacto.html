@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Personal - Facundo Acosta Santos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+        <div class="card">
+            <header class="header">
+                <div class="header-left">
+                    <h1>Ficha personal</h1>
+                    <p class="subtitle">Perfil de estudiante</p>
+                </div>
+                <div class="header-right">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar modo claro/oscuro">
+                        <span class="moon-icon">🌙</span>
+                        <span class="sun-icon">☀️</span>
+                    </button>
+                </div>
+            </header>
+
+            <main class="main-content">
+
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <img src="img/Foto.jpg" alt="Foto de perfil" class="profile-image">
+                    </div>
+                    <div class="profile-name">
+                        <h2>Facundo Acosta Santos</h2>
+                    </div>
+                </div>
+
+                <nav class="navigation-buttons">
+                    <a href="index.html" class="nav-btn home">Home</a>
+                    <a href="https://facosta-uade.github.io/UADE/" target="_blank" rel="noopener noreferrer" class="nav-btn local">Local Com</a>
+                    <a href="https://facosta-uade.github.io/UADE/" target="_blank" rel="noopener noreferrer" class="nav-btn fanpage">Fan Page</a>
+                    <a href="contacto.html" class="nav-btn contacto">Contacto</a>
+                </nav>
+
+                <div class="contact-form-container">
+                    <h2>Formulario de Contacto</h2>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                            <span class="error-message" id="nombre-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto <span class="required">*</span></label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto">
+                            <span class="error-message" id="asunto-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                            <span class="error-message" id="mensaje-error"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-left">
+                    <p>&copy;2025 Todos los derechos reservados</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/FAcosta-UADE/UADE.git" target="_blank" rel="noopener noreferrer" class="github-btn">
+                        <img src="img/Githug icono.png" alt="GitHub" class="github-icon">
+                        Ver en GitHub
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
